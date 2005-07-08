@@ -106,13 +106,6 @@ div.article li li {
 	list-style-image	: none;
 }
 
-div.day {
-	font-weight			: bold;
-	color				: #8d1d1d;
-	margin-left			: 1em;
-	border-bottom		: 1px solid #001a3e;
-}
-
 div.footnote {
 	text-align			: left;
 	color				: #8d1d1d;
@@ -151,6 +144,12 @@ table.list tr.b {
 /*********************************************
  * special
  */
+p.note {
+ 	font-weight			: bold;
+ 	color				: #8d1d1d;
+ 	margin-left			: 1em;
+}
+
 pre.dos {
 	color				: white;
 	background-color	: black;
