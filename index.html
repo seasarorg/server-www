@@ -3,35 +3,188 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>The Seasar Project: Default Page</title>
+<meta name="author" content="The Seasar Server Community" />
+<meta name="title" content="Seasarサーバ構築コミッティ" />
+<meta name="keywords" content="Seasarサーバ構築コミッティ, The Seasar Server, Seasar.org" />
+<meta name="description" content="Seasar.orgサーバに関する情報を掲載するサイトです。" />
+<link rel="index" title="index" href="http://server.seasar.org/" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Seasarサーバ構築コミッティ</title>
 </head>
 
 <body>
 
-<h1>The Seasar Project: Default Page</h1>
+<!-- header -->
+<div class="header">
+<img src="images/seasar_logo_blue.gif" alt="NPO the Seasar Foundation">
+<h1>Seasarサーバ構築コミッティ</h1>
+</div>
 
-<h2>Project</h2>
-<ul>
-<li>URL
-	<ul><li>http://projectname.seasar.org/</li></ul>
-</li>
-<li>SVN Path
-	<ul><li>https://www.seasar.org/svn/projectname/</li></ul>
-</li>
-</ul>
+<!-- article -->
+<div class="article">
 
-<h2>Sandbox Project</h2>
-<ul>
-<li>URL
-	<ul><li>http://projectname.sandbox.seasar.org/</li></ul>
-</li>
-<li>SVN Path
-	<ul><li>https://www.seasar.org/svn/sandbox/projectname/</li></ul>
-</li>
-</ul>
+<div class="section">
+	<h2>Seasarサーバ構築コミッティとは</h2>
+	<p>「Seasarサーバ構築コミッティ」とは、Seasarプロジェクトで利用するサーバを構築･運営するコミッティです。</p>
+</div>
 
-<p>* wwwディレクトリ以下に配置したものがコミット時にサイトに反映されます。</p>
+<div class="section">
+	<h2>Seasar.orgサーバについて</h2>
+	<p>Seasar.orgサーバは現在次の状態にあります。</p>
+
+	<h3>共通</h3>
+	<ul><li>現在サーバは2台あり、1台を本サーバ、もう1台を実験サーバとしています。
+			<ul><li>本サーバ: *.seasar.org</li>
+				<li>実験サーバ: *.dev.seasar.org</li></ul></li>
+		<li>プロジェクトごとにSVNリポジトリがあります。
+			<ul><li>wwwディレクトリにコミットしたものがプロジェクトサイトに自動反映されます。</li>
+				<li>コミットするには下記のツールが便利です。
+					<ul><li><a href="http://subclipse.tigris.org/">Subclipse</a>: Eclipse Pluginです。</li>
+						<li><a href="http://tortoisesvn.tigris.org/">TortoiseSVN</a>: Windowsのエクスプローラに組み込んで利用出来ます。。</li>
+						<li>svn: UNIX, Cygwinなどでのコマンド</li></ul></li>
+				</ul></li>
+	</ul>
+
+	<h3>S2プロダクト</h3>
+	<ul><li>各プロダクトのWEBコンテンツをホスティングしています。</li>
+		<li>ソースコードは、SourceForgeのCVSを利用しています。</li>
+		<li>メーリングリストは、SourceForgeのものを利用しています。</li>
+	</ul>
+
+	<h3>Sandbox</h3>
+	<h4>Seasar.orgサーバを利用していないプロダクト</h4>
+	<ul><li>通常はこちらになり、<a href="http://www.oscj.net/">OSCJ</a>のリソースを利用してます。
+			<ul><li>CVS</li>
+				<li>フォーラム</li>
+				<li>メーリングリスト</li></ul>
+			</li></ul>
+
+	<h4>Seasar.orgサーバを利用しているプロダクト</h4>
+	<ul><li>希望した一部のSandboxプロダクトはSeasar.orgサーバを利用しています。</li>
+		<li>サイトアドレスにsandboxが入ります。
+			<ul><li>例: http://example.sandbox.seasar.org/</li></ul></li>
+		<li>ソースコードにSeasar.orgサーバのSVNが利用出来ます。</li>
+	</ul>
+</div>
+
+<div class="section">
+	<h2>Seasar.orgサーバで稼動中のプロジェクト</h2>
+
+	<h3>S2プロダクト</h3>
+	<table class="list" summary="S2プロダクト一覧">
+	<tr>
+		<th>プロジェクト名</th>
+		<th>正式アドレス</th>
+		<th>練習用アドレス</th>
+		<th>PMOアカウント</th>
+		<th>登録コミッタ数</th>
+		<th>備考</th>
+	</tr>
+	<tr class="a">
+		<td>www</td>
+		<td><a href="http://www.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/www/">リポジトリ</a></td>
+		<td><a href="http://www.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/www/">リポジトリ</a></td>
+		<td>-</td>
+		<td>8名</td>
+		<td>マーケティングチーム主体</td>
+	</tr>
+	<tr class="b">
+		<td>foundation</td>
+		<td><a href="http://foundation.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/foundation/">リポジトリ</a></td>
+		<td><a href="http://foundation.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/foundation/">リポジトリ</a></td>
+		<td>-</td>
+		<td>2名</td>
+		<td>-</td>
+	</tr>
+	<tr class="a">
+		<td>server</td>
+		<td><a href="http://server.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/server/">リポジトリ</a></td>
+		<td><a href="http://server.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/server/">リポジトリ</a></td>
+		<td>-</td>
+		<td>14名</td>
+		<td>-</td>
+	<tr class="b">
+		<td>eclipse</td>
+		<td><a href="http://eclipse.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/www/">リポジトリ</a></td>
+		<td><a href="http://eclipse.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/eclipse/">リポジトリ</a></td>
+		<td>-</td>
+		<td>3名</td>
+		<td>-</td>
+	</tr>
+	</table>
+
+	<h3>Sandbox</h3>
+	<table class="list" summary="Sandbox一覧">
+	<tr>
+		<th>プロジェクト名</th>
+		<th>正式アドレス</th>
+		<th>練習用アドレス</th>
+		<th>PMOアカウント</th>
+		<th>登録コミッタ数</th>
+		<th>備考</th>
+	</tr>
+	<tr class="a">
+		<td>maya</td>
+		<td><a href="http://maya.sandbox.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/sandbox/maya/">リポジトリ</a></td>
+		<td><a href="http://maya.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/sandbox/maya/">リポジトリ</a></td>
+		<td>masataka</td>
+		<td>4名</td>
+		<td>-</td>
+	</tr>
+	<tr class="b">
+		<td>kvasir</td>
+		<td><a href="http://kvasir.sandbox.seasar.org/">サイト</a>
+			<a href="https://www.seasar.org/svn/sandbox/kvasir/">リポジトリ</a></td>
+		<td><a href="http://kvasir.sandbox.dev.seasar.org/">サイト</a>
+			<a href="https://www.dev.seasar.org/svn/sandbox/kvasir/">リポジトリ</a></td>
+		<td>skirnir</td>
+		<td>1名</td>
+		<td>-</td>
+	</tr>
+	</table>
+
+	<p>* 随時更新します。</p>
+</div>
+
+<div class="section">
+	<h2>アカウント申請方法</h2>
+	<p>アカウントが必要なコミッタの方は、<a href="http://lists.sourceforge.jp/mailman/listinfo/seasar-oper">Seasar-oper メーリングリスト</a>に下記の情報を明記して申請してください。</p>
+
+	<ul><li>希望アカウント名 (第2候補までお願いします)</li>
+		<li>コミット権限を持つ所属プロダクト</li></ul>
+
+	<p>アカウント発行後、発行したアカウント名と初期パスワードをSeasar-oper メーリングリストに登録してあるメールアドレスに送信します。</p>
+</div>
+
+<div class="section">
+	<h2>今後について</h2>
+	<h3>プロジェクトの運用方針について</h3>
+	<p>現在明確なプロジェクトの運用方針が定まっていませんが、<a href="http://lists.sourceforge.jp/mailman/listinfo/seasar-oper">Seasar-oper メーリングリスト</a>で議論された結果に従い運用していきます。</p>
+
+	<h3>機能について</h3>
+	<p>現在のリソースが分散してしまっている状態を解決するために、Seasar.orgサーバのための専用WEBアプリケーションを開発していきます。最終的には、各コミッタ・メーリングリストのアカウントをすべて一括で管理出来るようになる予定です。</p>
+</div>
+
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+<hr />
+<div class="address">
+	<address>Copyright &#169; 2005 The Seasar Server Community. all rights reserved.</address>
+</div>
+</div>
 
 </body>
 </html>
-
