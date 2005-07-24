@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="The Seasar Server Community" />
+<link rel="index" title="index" href="http://server.seasar.org/" />
+<link rel="stylesheet" type="text/css" href="../theme/main.css" />
+<title>Subclipseのインストール方法</title>
+</head>
+
+<body>
+
+<!-- header -->
+<div class="header">
+<img src="../images/seasar_logo_blue.gif" alt="The Seasar Server Community">
+<h1>Subclipseのインストール方法</h1>
+</div>
+
+<!-- article -->
+<div class="article">
+
+<div class="section">
+	<h2>概要</h2>
+	<p>EclipseにSVNリポジトリにアクセスするためのSubclipseプラグインを追加します。</p>
+
+	<ul>
+		<li>Subclipse: <a href="http://subclipse.tigris.org/">http://subclipse.tigris.org/</a></li>
+	</ul>
+
+	<h3>対象</h3>
+	<ul>
+		<li>コミッタ</li>
+		<li>ソースを読みたい方 (チェックアウトのみ)</li>
+	</ul>
+
+	<h3>環境</h3>
+	<p>説明で使用する環境は下記の通りです。</p>
+
+	<table class="list" summary="S2プロダクト一覧">
+	<tr>
+		<th>項目</th>
+		<th>値</th>
+	</tr>
+	<tr class="a">
+		<td>OS</td>
+		<td>Windows XP Professional</td>
+	</tr>
+	<tr class="b">
+		<td>Eclipse</td>
+		<td>3.x</td>
+	</tr>
+	</table>
+
+	<p>上記バージョン以外の環境でも多くの場合、動作すると思われます。</p>
+</div>
+
+<div class="section">
+	<h2>インストール方法</h2>
+
+	<h3><a name="p01">プラグインの追加</a></h3>
+	<p>EclipseにSubclipseプラグインを追加します。</p>
+	<img src="images/install_subclipse01.png" alt="プラグインの追加"/>
+
+	<h3><a name="p02">新しいプラグイン定義</h3>
+	<p>新しいプラグイン定義を追加します。</p>
+	<img src="images/install_subclipse02.png" alt="新しいプラグイン定義"/>
+
+	<h3><a name="p03">プラグイン定義の追加</a></h3>
+	<ol>
+		<li>新リモートサイトを押します。</li>
+		<li>定義名とプラグインサイトのURLを記入します。
+			<ul>
+				<li>Name: Subclipse</li>
+				<li>URL: http://subclipse.tigris.org/update</li>
+			</ul>
+		</li>
+	</ol>
+	<img src="images/install_subclipse03.png" alt="プラグイン定義の追加"/>
+
+	<h3><a name="p04">プラグイン定義の選択</a></h3>
+	<p>追加したSubclipseを選択します。</p>
+	<img src="images/install_subclipse04.png" alt="プラグイン定義の選択"/>
+
+	<h3><a name="p05">インストールするプラグイン</a></h3>
+	<p>インストールするプラグインを選択します。</p>
+	<img src="images/install_subclipse05.png" alt="インストールするプラグイン"/>
+
+	<h3><a name="p06">ライセンス確認</a></h3>
+	<p>ライセンスに同意できる場合は、同意するを選択します。</p>
+	<img src="images/install_subclipse06.png" alt="ライセンス確認"/>
+
+	<h3><a name="p07">インストール先の選択</a></h3>
+	<p>プラグインのインストール先を選択します。</p>
+	<img src="images/install_subclipse07.png" alt="インストール先の選択"/>
+
+	<h3><a name="p08">ダウンロード中</a></h3>
+	<p>ダウンロード中です。</p>
+	<img src="images/install_subclipse08.png" alt="ダウンロード中"/>
+
+	<h3><a name="p09">署名の確認</a></h3>
+	<p>プラグインにデジタル署名がされていない場合、インストールを続行するか確認されます。</p>
+	<img src="images/install_subclipse09.png" alt="署名の確認"/>
+
+	<h3><a name="p10">インストール中</a></h3>
+	<p>インストール中です。</p>
+	<img src="images/install_subclipse10.png" alt="インストール中"/>
+
+	<h3><a name="p11">再起動</a></h3>
+	<p>インストール後、再起動を求められるので再起動します。</p>
+	<img src="images/install_subclipse11.png" alt="再起動"/>
+
+	<p>以上でSubclipseのインストールは完了です。</p>
+</div>
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+<div>
+	<p><a href="./">戻る</a></p>
+</div>
+<hr />
+<div class="address">
+	<address>Copyright &#169; 2005 The Seasar Server Community. all rights reserved.</address>
+</div>
+</div>
+
+</body>
+</html>
